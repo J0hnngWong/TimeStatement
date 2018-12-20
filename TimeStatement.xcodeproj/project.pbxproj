@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7810547721CA7B6E00BC9B47 /* JTSRootNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7810547621CA7B6E00BC9B47 /* JTSRootNavigationViewController.m */; };
+		7810547F21CA823000BC9B47 /* JTSMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7810547D21CA823000BC9B47 /* JTSMainViewController.m */; };
+		7810548021CA823000BC9B47 /* JTSMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7810547E21CA823000BC9B47 /* JTSMainViewController.xib */; };
+		7810548521CA846100BC9B47 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7810548421CA846100BC9B47 /* LaunchScreen.xib */; };
+		7810548B21CA864200BC9B47 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7810548921CA864200BC9B47 /* SettingViewController.m */; };
+		7810548C21CA864200BC9B47 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7810548A21CA864200BC9B47 /* SettingViewController.xib */; };
 		78AD1A0821C3992300D03BF3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AD1A0721C3992300D03BF3 /* AppDelegate.m */; };
-		78AD1A0B21C3992300D03BF3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AD1A0A21C3992300D03BF3 /* ViewController.m */; };
-		78AD1A0E21C3992300D03BF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78AD1A0C21C3992300D03BF3 /* Main.storyboard */; };
 		78AD1A1021C3992500D03BF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78AD1A0F21C3992500D03BF3 /* Assets.xcassets */; };
-		78AD1A1321C3992500D03BF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78AD1A1121C3992500D03BF3 /* LaunchScreen.storyboard */; };
 		78AD1A1621C3992500D03BF3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AD1A1521C3992500D03BF3 /* main.m */; };
 		78AD1A2021C3992500D03BF3 /* TimeStatementTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AD1A1F21C3992500D03BF3 /* TimeStatementTests.m */; };
 		78AD1A2B21C3992500D03BF3 /* TimeStatementUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AD1A2A21C3992500D03BF3 /* TimeStatementUITests.m */; };
@@ -35,14 +38,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7810547521CA7B6E00BC9B47 /* JTSRootNavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JTSRootNavigationViewController.h; sourceTree = "<group>"; };
+		7810547621CA7B6E00BC9B47 /* JTSRootNavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JTSRootNavigationViewController.m; sourceTree = "<group>"; };
+		7810547C21CA823000BC9B47 /* JTSMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JTSMainViewController.h; sourceTree = "<group>"; };
+		7810547D21CA823000BC9B47 /* JTSMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JTSMainViewController.m; sourceTree = "<group>"; };
+		7810547E21CA823000BC9B47 /* JTSMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JTSMainViewController.xib; sourceTree = "<group>"; };
+		7810548421CA846100BC9B47 /* LaunchScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		7810548821CA864200BC9B47 /* SettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		7810548921CA864200BC9B47 /* SettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		7810548A21CA864200BC9B47 /* SettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
 		78AD1A0321C3992300D03BF3 /* TimeStatement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeStatement.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78AD1A0621C3992300D03BF3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		78AD1A0721C3992300D03BF3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		78AD1A0921C3992300D03BF3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		78AD1A0A21C3992300D03BF3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		78AD1A0D21C3992300D03BF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		78AD1A0F21C3992500D03BF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		78AD1A1221C3992500D03BF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		78AD1A1421C3992500D03BF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		78AD1A1521C3992500D03BF3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		78AD1A1B21C3992500D03BF3 /* TimeStatementTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeStatementTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +86,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7810548621CA85FE00BC9B47 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				7810547C21CA823000BC9B47 /* JTSMainViewController.h */,
+				7810547D21CA823000BC9B47 /* JTSMainViewController.m */,
+				7810547E21CA823000BC9B47 /* JTSMainViewController.xib */,
+				7810547521CA7B6E00BC9B47 /* JTSRootNavigationViewController.h */,
+				7810547621CA7B6E00BC9B47 /* JTSRootNavigationViewController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		7810548721CA862200BC9B47 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				7810548821CA864200BC9B47 /* SettingViewController.h */,
+				7810548921CA864200BC9B47 /* SettingViewController.m */,
+				7810548A21CA864200BC9B47 /* SettingViewController.xib */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
 		78AD19FA21C3992300D03BF3 = {
 			isa = PBXGroup;
 			children = (
@@ -101,13 +131,12 @@
 		78AD1A0521C3992300D03BF3 /* TimeStatement */ = {
 			isa = PBXGroup;
 			children = (
+				7810548621CA85FE00BC9B47 /* Main */,
+				7810548721CA862200BC9B47 /* Setting */,
 				78AD1A0621C3992300D03BF3 /* AppDelegate.h */,
 				78AD1A0721C3992300D03BF3 /* AppDelegate.m */,
-				78AD1A0921C3992300D03BF3 /* ViewController.h */,
-				78AD1A0A21C3992300D03BF3 /* ViewController.m */,
-				78AD1A0C21C3992300D03BF3 /* Main.storyboard */,
 				78AD1A0F21C3992500D03BF3 /* Assets.xcassets */,
-				78AD1A1121C3992500D03BF3 /* LaunchScreen.storyboard */,
+				7810548421CA846100BC9B47 /* LaunchScreen.xib */,
 				78AD1A1421C3992500D03BF3 /* Info.plist */,
 				78AD1A1521C3992500D03BF3 /* main.m */,
 			);
@@ -235,9 +264,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78AD1A1321C3992500D03BF3 /* LaunchScreen.storyboard in Resources */,
+				7810548021CA823000BC9B47 /* JTSMainViewController.xib in Resources */,
+				7810548521CA846100BC9B47 /* LaunchScreen.xib in Resources */,
 				78AD1A1021C3992500D03BF3 /* Assets.xcassets in Resources */,
-				78AD1A0E21C3992300D03BF3 /* Main.storyboard in Resources */,
+				7810548C21CA864200BC9B47 /* SettingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,9 +292,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78AD1A0B21C3992300D03BF3 /* ViewController.m in Sources */,
+				7810547721CA7B6E00BC9B47 /* JTSRootNavigationViewController.m in Sources */,
 				78AD1A1621C3992500D03BF3 /* main.m in Sources */,
 				78AD1A0821C3992300D03BF3 /* AppDelegate.m in Sources */,
+				7810547F21CA823000BC9B47 /* JTSMainViewController.m in Sources */,
+				7810548B21CA864200BC9B47 /* SettingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,25 +330,6 @@
 			targetProxy = 78AD1A2721C3992500D03BF3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		78AD1A0C21C3992300D03BF3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				78AD1A0D21C3992300D03BF3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		78AD1A1121C3992500D03BF3 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				78AD1A1221C3992500D03BF3 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		78AD1A2D21C3992500D03BF3 /* Debug */ = {

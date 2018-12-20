@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "JTSMainViewController.h"
+#import "JTSRootNavigationViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +19,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    //设定启动窗口
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    JTSMainViewController *mainViewController = [[JTSMainViewController alloc] initWithNibName:@"JTSMainViewController" bundle:nil];
+    JTSRootNavigationViewController *rootNavigationController = [[JTSRootNavigationViewController alloc] initWithRootViewController:mainViewController];
+    self.window.rootViewController = rootNavigationController;
+    
+    //self.window.backgroundColor = [UIColor redColor];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
