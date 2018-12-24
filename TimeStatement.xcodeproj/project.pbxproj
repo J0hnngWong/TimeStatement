@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		66F15A19AC6C97A3967F1D8C /* Pods_TimeStatementTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42ED9961F7F4B75BA20AB156 /* Pods_TimeStatementTests.framework */; };
+		7611A869C334448EDFA0868E /* Pods_TimeStatementUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B80AC2F9495E2E581700266 /* Pods_TimeStatementUITests.framework */; };
 		7810547721CA7B6E00BC9B47 /* JTSRootNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7810547621CA7B6E00BC9B47 /* JTSRootNavigationViewController.m */; };
 		7810547F21CA823000BC9B47 /* JTSMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7810547D21CA823000BC9B47 /* JTSMainViewController.m */; };
 		7810548021CA823000BC9B47 /* JTSMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7810547E21CA823000BC9B47 /* JTSMainViewController.xib */; };
@@ -18,6 +20,9 @@
 		78AD1A1621C3992500D03BF3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AD1A1521C3992500D03BF3 /* main.m */; };
 		78AD1A2021C3992500D03BF3 /* TimeStatementTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AD1A1F21C3992500D03BF3 /* TimeStatementTests.m */; };
 		78AD1A2B21C3992500D03BF3 /* TimeStatementUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AD1A2A21C3992500D03BF3 /* TimeStatementUITests.m */; };
+		78D8E28C21CBAC9800AED9A5 /* UIViewController+JTSStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D8E28B21CBAC9800AED9A5 /* UIViewController+JTSStyle.m */; };
+		78D8E29321CBE10300AED9A5 /* UIButton+JTSStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D8E29221CBE10300AED9A5 /* UIButton+JTSStyle.m */; };
+		A7AC5387C54085192A1C6CDB /* Pods_TimeStatement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6A61FD907E6639DF92E8FE8 /* Pods_TimeStatement.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0FCCD3CBAE02CAAE74C0AC44 /* Pods-TimeStatementTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeStatementTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TimeStatementTests/Pods-TimeStatementTests.release.xcconfig"; sourceTree = "<group>"; };
+		2B80AC2F9495E2E581700266 /* Pods_TimeStatementUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimeStatementUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42ED9961F7F4B75BA20AB156 /* Pods_TimeStatementTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimeStatementTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		62E39A8A5F83C5AF510574F6 /* Pods-TimeStatement.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeStatement.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TimeStatement/Pods-TimeStatement.debug.xcconfig"; sourceTree = "<group>"; };
 		7810547521CA7B6E00BC9B47 /* JTSRootNavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JTSRootNavigationViewController.h; sourceTree = "<group>"; };
 		7810547621CA7B6E00BC9B47 /* JTSRootNavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JTSRootNavigationViewController.m; sourceTree = "<group>"; };
 		7810547C21CA823000BC9B47 /* JTSMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JTSMainViewController.h; sourceTree = "<group>"; };
@@ -59,6 +68,17 @@
 		78AD1A2621C3992500D03BF3 /* TimeStatementUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeStatementUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		78AD1A2A21C3992500D03BF3 /* TimeStatementUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimeStatementUITests.m; sourceTree = "<group>"; };
 		78AD1A2C21C3992500D03BF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78D8E28A21CBAC9800AED9A5 /* UIViewController+JTSStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+JTSStyle.h"; sourceTree = "<group>"; };
+		78D8E28B21CBAC9800AED9A5 /* UIViewController+JTSStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+JTSStyle.m"; sourceTree = "<group>"; };
+		78D8E28E21CBBE2D00AED9A5 /* JTSMacroDefination.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JTSMacroDefination.h; sourceTree = "<group>"; };
+		78D8E28F21CBDC8300AED9A5 /* JTSUIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JTSUIKit.h; sourceTree = "<group>"; };
+		78D8E29121CBE10300AED9A5 /* UIButton+JTSStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+JTSStyle.h"; sourceTree = "<group>"; };
+		78D8E29221CBE10300AED9A5 /* UIButton+JTSStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+JTSStyle.m"; sourceTree = "<group>"; };
+		7C24E653499E2359D8329945 /* Pods-TimeStatementUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeStatementUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TimeStatementUITests/Pods-TimeStatementUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		81831E682B7C0BB5E932F088 /* Pods-TimeStatementUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeStatementUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TimeStatementUITests/Pods-TimeStatementUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C6A61FD907E6639DF92E8FE8 /* Pods_TimeStatement.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimeStatement.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB14A2657170A11907BB4CBF /* Pods-TimeStatementTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeStatementTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TimeStatementTests/Pods-TimeStatementTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DBCA886C8A72F1F8F24F894C /* Pods-TimeStatement.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeStatement.release.xcconfig"; path = "Pods/Target Support Files/Pods-TimeStatement/Pods-TimeStatement.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7AC5387C54085192A1C6CDB /* Pods_TimeStatement.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66F15A19AC6C97A3967F1D8C /* Pods_TimeStatementTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,12 +102,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7611A869C334448EDFA0868E /* Pods_TimeStatementUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B54D01D7897C463D977F157 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C6A61FD907E6639DF92E8FE8 /* Pods_TimeStatement.framework */,
+				42ED9961F7F4B75BA20AB156 /* Pods_TimeStatementTests.framework */,
+				2B80AC2F9495E2E581700266 /* Pods_TimeStatementUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7810548621CA85FE00BC9B47 /* Main */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +148,8 @@
 				78AD1A1E21C3992500D03BF3 /* TimeStatementTests */,
 				78AD1A2921C3992500D03BF3 /* TimeStatementUITests */,
 				78AD1A0421C3992300D03BF3 /* Products */,
+				B0A7EB1D07B37C2236A29A69 /* Pods */,
+				3B54D01D7897C463D977F157 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,6 +166,8 @@
 		78AD1A0521C3992300D03BF3 /* TimeStatement */ = {
 			isa = PBXGroup;
 			children = (
+				78D8E28D21CBBE1400AED9A5 /* Tools */,
+				78D8E28821CBAC4200AED9A5 /* JTSUIKit */,
 				7810548621CA85FE00BC9B47 /* Main */,
 				7810548721CA862200BC9B47 /* Setting */,
 				78AD1A0621C3992300D03BF3 /* AppDelegate.h */,
@@ -161,6 +198,55 @@
 			path = TimeStatementUITests;
 			sourceTree = "<group>";
 		};
+		78D8E28821CBAC4200AED9A5 /* JTSUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				78D8E28F21CBDC8300AED9A5 /* JTSUIKit.h */,
+				78D8E28921CBAC5B00AED9A5 /* JTSUIViewController */,
+				78D8E29021CBE0BC00AED9A5 /* JTSUIButton */,
+			);
+			path = JTSUIKit;
+			sourceTree = "<group>";
+		};
+		78D8E28921CBAC5B00AED9A5 /* JTSUIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				78D8E28A21CBAC9800AED9A5 /* UIViewController+JTSStyle.h */,
+				78D8E28B21CBAC9800AED9A5 /* UIViewController+JTSStyle.m */,
+			);
+			path = JTSUIViewController;
+			sourceTree = "<group>";
+		};
+		78D8E28D21CBBE1400AED9A5 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				78D8E28E21CBBE2D00AED9A5 /* JTSMacroDefination.h */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		78D8E29021CBE0BC00AED9A5 /* JTSUIButton */ = {
+			isa = PBXGroup;
+			children = (
+				78D8E29121CBE10300AED9A5 /* UIButton+JTSStyle.h */,
+				78D8E29221CBE10300AED9A5 /* UIButton+JTSStyle.m */,
+			);
+			path = JTSUIButton;
+			sourceTree = "<group>";
+		};
+		B0A7EB1D07B37C2236A29A69 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				62E39A8A5F83C5AF510574F6 /* Pods-TimeStatement.debug.xcconfig */,
+				DBCA886C8A72F1F8F24F894C /* Pods-TimeStatement.release.xcconfig */,
+				DB14A2657170A11907BB4CBF /* Pods-TimeStatementTests.debug.xcconfig */,
+				0FCCD3CBAE02CAAE74C0AC44 /* Pods-TimeStatementTests.release.xcconfig */,
+				7C24E653499E2359D8329945 /* Pods-TimeStatementUITests.debug.xcconfig */,
+				81831E682B7C0BB5E932F088 /* Pods-TimeStatementUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -168,9 +254,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 78AD1A2F21C3992500D03BF3 /* Build configuration list for PBXNativeTarget "TimeStatement" */;
 			buildPhases = (
+				49F87E8386D010842DB5AC07 /* [CP] Check Pods Manifest.lock */,
 				78AD19FF21C3992300D03BF3 /* Sources */,
 				78AD1A0021C3992300D03BF3 /* Frameworks */,
 				78AD1A0121C3992300D03BF3 /* Resources */,
+				C5D539500B7D061BFAF3969C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -185,6 +273,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 78AD1A3221C3992500D03BF3 /* Build configuration list for PBXNativeTarget "TimeStatementTests" */;
 			buildPhases = (
+				F75840FD9181EC49C5858A2E /* [CP] Check Pods Manifest.lock */,
 				78AD1A1721C3992500D03BF3 /* Sources */,
 				78AD1A1821C3992500D03BF3 /* Frameworks */,
 				78AD1A1921C3992500D03BF3 /* Resources */,
@@ -203,6 +292,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 78AD1A3521C3992500D03BF3 /* Build configuration list for PBXNativeTarget "TimeStatementUITests" */;
 			buildPhases = (
+				3539DEBF764E8E904B28FF7A /* [CP] Check Pods Manifest.lock */,
 				78AD1A2221C3992500D03BF3 /* Sources */,
 				78AD1A2321C3992500D03BF3 /* Frameworks */,
 				78AD1A2421C3992500D03BF3 /* Resources */,
@@ -287,15 +377,122 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3539DEBF764E8E904B28FF7A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TimeStatementUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		49F87E8386D010842DB5AC07 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TimeStatement-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5D539500B7D061BFAF3969C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TimeStatement/Pods-TimeStatement-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveObjC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TimeStatement/Pods-TimeStatement-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F75840FD9181EC49C5858A2E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TimeStatementTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		78AD19FF21C3992300D03BF3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78D8E28C21CBAC9800AED9A5 /* UIViewController+JTSStyle.m in Sources */,
 				7810547721CA7B6E00BC9B47 /* JTSRootNavigationViewController.m in Sources */,
 				78AD1A1621C3992500D03BF3 /* main.m in Sources */,
 				78AD1A0821C3992300D03BF3 /* AppDelegate.m in Sources */,
 				7810547F21CA823000BC9B47 /* JTSMainViewController.m in Sources */,
+				78D8E29321CBE10300AED9A5 /* UIButton+JTSStyle.m in Sources */,
 				7810548B21CA864200BC9B47 /* SettingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,6 +643,7 @@
 		};
 		78AD1A3021C3992500D03BF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62E39A8A5F83C5AF510574F6 /* Pods-TimeStatement.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -462,6 +660,7 @@
 		};
 		78AD1A3121C3992500D03BF3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBCA886C8A72F1F8F24F894C /* Pods-TimeStatement.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -478,6 +677,7 @@
 		};
 		78AD1A3321C3992500D03BF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB14A2657170A11907BB4CBF /* Pods-TimeStatementTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -496,6 +696,7 @@
 		};
 		78AD1A3421C3992500D03BF3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FCCD3CBAE02CAAE74C0AC44 /* Pods-TimeStatementTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -514,6 +715,7 @@
 		};
 		78AD1A3621C3992500D03BF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C24E653499E2359D8329945 /* Pods-TimeStatementUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TimeStatementUITests/Info.plist;
@@ -531,6 +733,7 @@
 		};
 		78AD1A3721C3992500D03BF3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81831E682B7C0BB5E932F088 /* Pods-TimeStatementUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TimeStatementUITests/Info.plist;

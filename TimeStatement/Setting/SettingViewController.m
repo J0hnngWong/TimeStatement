@@ -7,6 +7,7 @@
 //
 
 #import "SettingViewController.h"
+#import "JTSUIKit.h"
 
 @interface SettingViewController ()
 
@@ -17,7 +18,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.navigationController.navigationBar.hidden = NO;
+    [self.navigationController setNavigationBarHidden:NO];
+    [self showNavigationBarWithTitle:@"Setting"];
+    self.navigationController.navigationBar.barTintColor = [UIColor blueColor];
+    UITabBar *tabBar = [[UITabBar alloc] initWithFrame:CGRectMake(40, 0, 300, 64)];
+    tabBar.barTintColor = [UIColor redColor];
+    [self.view addSubview:tabBar];
 }
 
 /*

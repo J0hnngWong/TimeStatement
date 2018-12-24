@@ -8,6 +8,9 @@
 
 #import "JTSMainViewController.h"
 #import "SettingViewController.h"
+#import "MBProgressHUD.h"
+#import "JTSUIKit.h"
+#import "Masonry.h"
 
 @interface JTSMainViewController ()
 
@@ -18,24 +21,37 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    [self _assignSubView];
+}
+
+- (void)_assignSubView
+{
     self.navigationController.navigationBar.hidden = YES;
     
     [self.view setBackgroundColor:[UIColor whiteColor]];
     
     UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(300, 300, 30, 30)];
-    btn.backgroundColor = [UIColor blackColor];
+    [btn setButtonWithStyle:JTSButtonStyleFullColor theme:JTSButtonThemeDefault cornerRadius:JTSButtonCornerRadiusFull];
     [self.view addSubview:btn];
     
     [btn addTarget:self action:@selector(jump) forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
-    self.navigationController.navigationBar.hidden = YES;
+    self.navigationController.navigationBar.hidden = NO;
+    UIBarButtonItem *backBtn = [[UIBarButtonItem alloc] initWithTitle:@"back" style:UIBarButtonItemStylePlain target:self action:@selector(showMsg)];
+    self.navigationItem.rightBarButtonItem = backBtn;
 }
 
 - (void)jump {
     SettingViewController *setting = [[SettingViewController alloc] init];
     [self.navigationController pushViewController:setting animated:YES];
+}
+
+- (void)showMsg {
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    hud.mode = MBProgressHUDModeDeterminate;
+    [hud hideAnimated:YES afterDelay:1];
 }
 /*
 #pragma mark - Navigation
