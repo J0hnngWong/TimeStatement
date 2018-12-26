@@ -11,6 +11,7 @@
 @implementation UIViewController (JTSStyle)
 
 - (void)showNavigationBarWithTitle:(NSString *)title {
+    self.navigationController.navigationBar.hidden = NO;
     [self setTitle:title];
 }
 

@@ -15,11 +15,17 @@
 		7810548521CA846100BC9B47 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7810548421CA846100BC9B47 /* LaunchScreen.xib */; };
 		7810548B21CA864200BC9B47 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7810548921CA864200BC9B47 /* SettingViewController.m */; };
 		7810548C21CA864200BC9B47 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7810548A21CA864200BC9B47 /* SettingViewController.xib */; };
+		789CE14721D20F9800D69FC1 /* JTSStatementEditorViewControllerViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 789CE14621D20F9800D69FC1 /* JTSStatementEditorViewControllerViewModel.m */; };
+		78A08A8E21D23A000092E6A1 /* UIView+JTSEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A08A8D21D23A000092E6A1 /* UIView+JTSEvent.m */; };
 		78AD1A0821C3992300D03BF3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AD1A0721C3992300D03BF3 /* AppDelegate.m */; };
 		78AD1A1021C3992500D03BF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78AD1A0F21C3992500D03BF3 /* Assets.xcassets */; };
 		78AD1A1621C3992500D03BF3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AD1A1521C3992500D03BF3 /* main.m */; };
 		78AD1A2021C3992500D03BF3 /* TimeStatementTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AD1A1F21C3992500D03BF3 /* TimeStatementTests.m */; };
 		78AD1A2B21C3992500D03BF3 /* TimeStatementUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AD1A2A21C3992500D03BF3 /* TimeStatementUITests.m */; };
+		78B4DB2A21D0C72C0079675E /* JTSStatementEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B4DB2821D0C72C0079675E /* JTSStatementEditorViewController.m */; };
+		78B4DB2B21D0C72C0079675E /* JTSStatementEditorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78B4DB2921D0C72C0079675E /* JTSStatementEditorViewController.xib */; };
+		78B4DB3021D0CE240079675E /* UIViewController+JTSRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B4DB2F21D0CE240079675E /* UIViewController+JTSRouter.m */; };
+		78B4DB3621D0EC3F0079675E /* UINavigationController+JTSStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B4DB3521D0EC3F0079675E /* UINavigationController+JTSStyle.m */; };
 		78D8E28C21CBAC9800AED9A5 /* UIViewController+JTSStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D8E28B21CBAC9800AED9A5 /* UIViewController+JTSStyle.m */; };
 		78D8E29321CBE10300AED9A5 /* UIButton+JTSStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D8E29221CBE10300AED9A5 /* UIButton+JTSStyle.m */; };
 		A7AC5387C54085192A1C6CDB /* Pods_TimeStatement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6A61FD907E6639DF92E8FE8 /* Pods_TimeStatement.framework */; };
@@ -56,6 +62,10 @@
 		7810548821CA864200BC9B47 /* SettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
 		7810548921CA864200BC9B47 /* SettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 		7810548A21CA864200BC9B47 /* SettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
+		789CE14521D20F9800D69FC1 /* JTSStatementEditorViewControllerViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JTSStatementEditorViewControllerViewModel.h; sourceTree = "<group>"; };
+		789CE14621D20F9800D69FC1 /* JTSStatementEditorViewControllerViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JTSStatementEditorViewControllerViewModel.m; sourceTree = "<group>"; };
+		78A08A8C21D23A000092E6A1 /* UIView+JTSEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+JTSEvent.h"; sourceTree = "<group>"; };
+		78A08A8D21D23A000092E6A1 /* UIView+JTSEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+JTSEvent.m"; sourceTree = "<group>"; };
 		78AD1A0321C3992300D03BF3 /* TimeStatement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeStatement.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78AD1A0621C3992300D03BF3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		78AD1A0721C3992300D03BF3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -68,6 +78,13 @@
 		78AD1A2621C3992500D03BF3 /* TimeStatementUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeStatementUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		78AD1A2A21C3992500D03BF3 /* TimeStatementUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimeStatementUITests.m; sourceTree = "<group>"; };
 		78AD1A2C21C3992500D03BF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78B4DB2721D0C72C0079675E /* JTSStatementEditorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JTSStatementEditorViewController.h; sourceTree = "<group>"; };
+		78B4DB2821D0C72C0079675E /* JTSStatementEditorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JTSStatementEditorViewController.m; sourceTree = "<group>"; };
+		78B4DB2921D0C72C0079675E /* JTSStatementEditorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JTSStatementEditorViewController.xib; sourceTree = "<group>"; };
+		78B4DB2E21D0CE240079675E /* UIViewController+JTSRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+JTSRouter.h"; sourceTree = "<group>"; };
+		78B4DB2F21D0CE240079675E /* UIViewController+JTSRouter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+JTSRouter.m"; sourceTree = "<group>"; };
+		78B4DB3421D0EC3F0079675E /* UINavigationController+JTSStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+JTSStyle.h"; sourceTree = "<group>"; };
+		78B4DB3521D0EC3F0079675E /* UINavigationController+JTSStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+JTSStyle.m"; sourceTree = "<group>"; };
 		78D8E28A21CBAC9800AED9A5 /* UIViewController+JTSStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+JTSStyle.h"; sourceTree = "<group>"; };
 		78D8E28B21CBAC9800AED9A5 /* UIViewController+JTSStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+JTSStyle.m"; sourceTree = "<group>"; };
 		78D8E28E21CBBE2D00AED9A5 /* JTSMacroDefination.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JTSMacroDefination.h; sourceTree = "<group>"; };
@@ -122,11 +139,9 @@
 		7810548621CA85FE00BC9B47 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				7810547C21CA823000BC9B47 /* JTSMainViewController.h */,
-				7810547D21CA823000BC9B47 /* JTSMainViewController.m */,
-				7810547E21CA823000BC9B47 /* JTSMainViewController.xib */,
-				7810547521CA7B6E00BC9B47 /* JTSRootNavigationViewController.h */,
-				7810547621CA7B6E00BC9B47 /* JTSRootNavigationViewController.m */,
+				7892701A21D0BCCC00DC0C81 /* View */,
+				7892701921D0BCC000DC0C81 /* ViewModel */,
+				7892701821D0BCA800DC0C81 /* ViewController */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -139,6 +154,48 @@
 				7810548A21CA864200BC9B47 /* SettingViewController.xib */,
 			);
 			path = Setting;
+			sourceTree = "<group>";
+		};
+		7892701821D0BCA800DC0C81 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7810547C21CA823000BC9B47 /* JTSMainViewController.h */,
+				7810547D21CA823000BC9B47 /* JTSMainViewController.m */,
+				7810547E21CA823000BC9B47 /* JTSMainViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		7892701921D0BCC000DC0C81 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7892701A21D0BCCC00DC0C81 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		789CE14421D20F3E00D69FC1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				789CE14521D20F9800D69FC1 /* JTSStatementEditorViewControllerViewModel.h */,
+				789CE14621D20F9800D69FC1 /* JTSStatementEditorViewControllerViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		78A08A8B21D239D50092E6A1 /* JTSUIView */ = {
+			isa = PBXGroup;
+			children = (
+				78A08A8C21D23A000092E6A1 /* UIView+JTSEvent.h */,
+				78A08A8D21D23A000092E6A1 /* UIView+JTSEvent.m */,
+			);
+			path = JTSUIView;
 			sourceTree = "<group>";
 		};
 		78AD19FA21C3992300D03BF3 = {
@@ -166,10 +223,14 @@
 		78AD1A0521C3992300D03BF3 /* TimeStatement */ = {
 			isa = PBXGroup;
 			children = (
-				78D8E28D21CBBE1400AED9A5 /* Tools */,
+				78B4DB2D21D0CDDF0079675E /* JTSRouter */,
+				78D8E28D21CBBE1400AED9A5 /* JTSTools */,
 				78D8E28821CBAC4200AED9A5 /* JTSUIKit */,
+				78B4DB2621D0C3600079675E /* StatementEditor */,
 				7810548621CA85FE00BC9B47 /* Main */,
 				7810548721CA862200BC9B47 /* Setting */,
+				7810547521CA7B6E00BC9B47 /* JTSRootNavigationViewController.h */,
+				7810547621CA7B6E00BC9B47 /* JTSRootNavigationViewController.m */,
 				78AD1A0621C3992300D03BF3 /* AppDelegate.h */,
 				78AD1A0721C3992300D03BF3 /* AppDelegate.m */,
 				78AD1A0F21C3992500D03BF3 /* Assets.xcassets */,
@@ -198,12 +259,51 @@
 			path = TimeStatementUITests;
 			sourceTree = "<group>";
 		};
+		78B4DB2621D0C3600079675E /* StatementEditor */ = {
+			isa = PBXGroup;
+			children = (
+				789CE14421D20F3E00D69FC1 /* ViewModel */,
+				78B4DB2C21D0C9FF0079675E /* ViewController */,
+			);
+			path = StatementEditor;
+			sourceTree = "<group>";
+		};
+		78B4DB2C21D0C9FF0079675E /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				78B4DB2721D0C72C0079675E /* JTSStatementEditorViewController.h */,
+				78B4DB2821D0C72C0079675E /* JTSStatementEditorViewController.m */,
+				78B4DB2921D0C72C0079675E /* JTSStatementEditorViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		78B4DB2D21D0CDDF0079675E /* JTSRouter */ = {
+			isa = PBXGroup;
+			children = (
+				78B4DB2E21D0CE240079675E /* UIViewController+JTSRouter.h */,
+				78B4DB2F21D0CE240079675E /* UIViewController+JTSRouter.m */,
+			);
+			path = JTSRouter;
+			sourceTree = "<group>";
+		};
+		78B4DB3321D0EBEF0079675E /* JTSUINavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				78B4DB3421D0EC3F0079675E /* UINavigationController+JTSStyle.h */,
+				78B4DB3521D0EC3F0079675E /* UINavigationController+JTSStyle.m */,
+			);
+			path = JTSUINavigationController;
+			sourceTree = "<group>";
+		};
 		78D8E28821CBAC4200AED9A5 /* JTSUIKit */ = {
 			isa = PBXGroup;
 			children = (
 				78D8E28F21CBDC8300AED9A5 /* JTSUIKit.h */,
+				78A08A8B21D239D50092E6A1 /* JTSUIView */,
 				78D8E28921CBAC5B00AED9A5 /* JTSUIViewController */,
 				78D8E29021CBE0BC00AED9A5 /* JTSUIButton */,
+				78B4DB3321D0EBEF0079675E /* JTSUINavigationController */,
 			);
 			path = JTSUIKit;
 			sourceTree = "<group>";
@@ -217,12 +317,12 @@
 			path = JTSUIViewController;
 			sourceTree = "<group>";
 		};
-		78D8E28D21CBBE1400AED9A5 /* Tools */ = {
+		78D8E28D21CBBE1400AED9A5 /* JTSTools */ = {
 			isa = PBXGroup;
 			children = (
 				78D8E28E21CBBE2D00AED9A5 /* JTSMacroDefination.h */,
 			);
-			path = Tools;
+			path = JTSTools;
 			sourceTree = "<group>";
 		};
 		78D8E29021CBE0BC00AED9A5 /* JTSUIButton */ = {
@@ -355,6 +455,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7810548021CA823000BC9B47 /* JTSMainViewController.xib in Resources */,
+				78B4DB2B21D0C72C0079675E /* JTSStatementEditorViewController.xib in Resources */,
 				7810548521CA846100BC9B47 /* LaunchScreen.xib in Resources */,
 				78AD1A1021C3992500D03BF3 /* Assets.xcassets in Resources */,
 				7810548C21CA864200BC9B47 /* SettingViewController.xib in Resources */,
@@ -488,9 +589,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				78D8E28C21CBAC9800AED9A5 /* UIViewController+JTSStyle.m in Sources */,
+				78B4DB2A21D0C72C0079675E /* JTSStatementEditorViewController.m in Sources */,
 				7810547721CA7B6E00BC9B47 /* JTSRootNavigationViewController.m in Sources */,
+				78A08A8E21D23A000092E6A1 /* UIView+JTSEvent.m in Sources */,
 				78AD1A1621C3992500D03BF3 /* main.m in Sources */,
 				78AD1A0821C3992300D03BF3 /* AppDelegate.m in Sources */,
+				78B4DB3621D0EC3F0079675E /* UINavigationController+JTSStyle.m in Sources */,
+				789CE14721D20F9800D69FC1 /* JTSStatementEditorViewControllerViewModel.m in Sources */,
+				78B4DB3021D0CE240079675E /* UIViewController+JTSRouter.m in Sources */,
 				7810547F21CA823000BC9B47 /* JTSMainViewController.m in Sources */,
 				78D8E29321CBE10300AED9A5 /* UIButton+JTSStyle.m in Sources */,
 				7810548B21CA864200BC9B47 /* SettingViewController.m in Sources */,

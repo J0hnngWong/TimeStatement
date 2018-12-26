@@ -11,8 +11,12 @@
 #import "MBProgressHUD.h"
 #import "JTSUIKit.h"
 #import "Masonry.h"
+#import "ReactiveObjC.h"
+#import "UIViewController+JTSRouter.h"
+#import "JTSStatementEditorViewController.h"
 
 @interface JTSMainViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *addNewStatementButton;
 
 @end
 
@@ -22,25 +26,29 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     [self _assignSubView];
+    [self _assignEvent];
 }
+
+#pragma mark - private
 
 - (void)_assignSubView
 {
-    self.navigationController.navigationBar.hidden = YES;
-    
-    [self.view setBackgroundColor:[UIColor whiteColor]];
-    
-    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(300, 300, 30, 30)];
-    [btn setButtonWithStyle:JTSButtonStyleFullColor theme:JTSButtonThemeDefault cornerRadius:JTSButtonCornerRadiusFull];
-    [self.view addSubview:btn];
-    
-    [btn addTarget:self action:@selector(jump) forControlEvents:UIControlEventTouchUpInside];
+    [self.addNewStatementButton setButtonWithStyle:JTSButtonStyleFullColor theme:JTSButtonThemeDefault cornerRadius:JTSButtonCornerRadiusFull];
+    [self.view bringSubviewToFront:self.addNewStatementButton];
+}
+
+- (void)_assignEvent
+{
+    [[self.addNewStatementButton rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
+        [self presentViewController:[JTSStatementEditorViewController class]];
+    }];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     self.navigationController.navigationBar.hidden = NO;
     UIBarButtonItem *backBtn = [[UIBarButtonItem alloc] initWithTitle:@"back" style:UIBarButtonItemStylePlain target:self action:@selector(showMsg)];
     self.navigationItem.rightBarButtonItem = backBtn;
+    NSLog(@"%@", self.navigationController);
 }
 
 - (void)jump {

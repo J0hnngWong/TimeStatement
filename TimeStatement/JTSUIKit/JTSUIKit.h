@@ -12,6 +12,8 @@
 #import "UIViewController+JTSStyle.h"
 #import "UIButton+JTSStyle.h"
 #import "Masonry.h"
+#import "UINavigationController+JTSStyle.h"
+#import "UIView+JTSEvent.h"
 
 
 #endif /* JTSUIKit_h */
