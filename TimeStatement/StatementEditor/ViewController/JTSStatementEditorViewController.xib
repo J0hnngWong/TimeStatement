@@ -12,9 +12,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JTSStatementEditorViewController">
             <connections>
-                <outlet property="_mainScrollView" destination="Jqj-Df-Lzh" id="ZwB-58-h2e"/>
                 <outlet property="eventTimeView" destination="XPX-Yi-wSz" id="AGg-At-Hjw"/>
                 <outlet property="eventTimeViewHeight" destination="jrX-Bw-jnT" id="jLo-ku-1HQ"/>
+                <outlet property="mainScrollView" destination="Jqj-Df-Lzh" id="GWd-Zo-ibL"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

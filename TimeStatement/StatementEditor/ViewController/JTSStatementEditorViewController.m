@@ -10,7 +10,6 @@
 #import "JTSUIKit.h"
 #import "ReactiveObjC.h"
 #import "RACEXTScope.h"
-
 @interface JTSStatementEditorViewController ()
 @property (weak, nonatomic) IBOutlet UIScrollView *mainScrollView;
 @property (weak, nonatomic) IBOutlet UIView *eventTimeView;
