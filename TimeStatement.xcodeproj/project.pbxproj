@@ -17,6 +17,8 @@
 		7810548C21CA864200BC9B47 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7810548A21CA864200BC9B47 /* SettingViewController.xib */; };
 		789CE14721D20F9800D69FC1 /* JTSStatementEditorViewControllerViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 789CE14621D20F9800D69FC1 /* JTSStatementEditorViewControllerViewModel.m */; };
 		78A08A8E21D23A000092E6A1 /* UIView+JTSEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A08A8D21D23A000092E6A1 /* UIView+JTSEvent.m */; };
+		78A08AD721D392280092E6A1 /* JTSPopTimeDurationSelecterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A08AD521D392280092E6A1 /* JTSPopTimeDurationSelecterView.m */; };
+		78A08AD821D392280092E6A1 /* JTSPopTimeDurationSelecterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78A08AD621D392280092E6A1 /* JTSPopTimeDurationSelecterView.xib */; };
 		78AD1A0821C3992300D03BF3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AD1A0721C3992300D03BF3 /* AppDelegate.m */; };
 		78AD1A1021C3992500D03BF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78AD1A0F21C3992500D03BF3 /* Assets.xcassets */; };
 		78AD1A1621C3992500D03BF3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AD1A1521C3992500D03BF3 /* main.m */; };
@@ -66,6 +68,9 @@
 		789CE14621D20F9800D69FC1 /* JTSStatementEditorViewControllerViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JTSStatementEditorViewControllerViewModel.m; sourceTree = "<group>"; };
 		78A08A8C21D23A000092E6A1 /* UIView+JTSEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+JTSEvent.h"; sourceTree = "<group>"; };
 		78A08A8D21D23A000092E6A1 /* UIView+JTSEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+JTSEvent.m"; sourceTree = "<group>"; };
+		78A08AD421D392280092E6A1 /* JTSPopTimeDurationSelecterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JTSPopTimeDurationSelecterView.h; sourceTree = "<group>"; };
+		78A08AD521D392280092E6A1 /* JTSPopTimeDurationSelecterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JTSPopTimeDurationSelecterView.m; sourceTree = "<group>"; };
+		78A08AD621D392280092E6A1 /* JTSPopTimeDurationSelecterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JTSPopTimeDurationSelecterView.xib; sourceTree = "<group>"; };
 		78AD1A0321C3992300D03BF3 /* TimeStatement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeStatement.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78AD1A0621C3992300D03BF3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		78AD1A0721C3992300D03BF3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -198,6 +203,23 @@
 			path = JTSUIView;
 			sourceTree = "<group>";
 		};
+		78A08ACD21D38C0C0092E6A1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		78A08ACE21D391C50092E6A1 /* JTSPopTimeDurationSelecter */ = {
+			isa = PBXGroup;
+			children = (
+				78A08AD421D392280092E6A1 /* JTSPopTimeDurationSelecterView.h */,
+				78A08AD521D392280092E6A1 /* JTSPopTimeDurationSelecterView.m */,
+				78A08AD621D392280092E6A1 /* JTSPopTimeDurationSelecterView.xib */,
+			);
+			path = JTSPopTimeDurationSelecter;
+			sourceTree = "<group>";
+		};
 		78AD19FA21C3992300D03BF3 = {
 			isa = PBXGroup;
 			children = (
@@ -262,6 +284,7 @@
 		78B4DB2621D0C3600079675E /* StatementEditor */ = {
 			isa = PBXGroup;
 			children = (
+				78A08ACD21D38C0C0092E6A1 /* View */,
 				789CE14421D20F3E00D69FC1 /* ViewModel */,
 				78B4DB2C21D0C9FF0079675E /* ViewController */,
 			);
@@ -300,6 +323,7 @@
 			isa = PBXGroup;
 			children = (
 				78D8E28F21CBDC8300AED9A5 /* JTSUIKit.h */,
+				78A08ACE21D391C50092E6A1 /* JTSPopTimeDurationSelecter */,
 				78A08A8B21D239D50092E6A1 /* JTSUIView */,
 				78D8E28921CBAC5B00AED9A5 /* JTSUIViewController */,
 				78D8E29021CBE0BC00AED9A5 /* JTSUIButton */,
@@ -458,6 +482,7 @@
 				78B4DB2B21D0C72C0079675E /* JTSStatementEditorViewController.xib in Resources */,
 				7810548521CA846100BC9B47 /* LaunchScreen.xib in Resources */,
 				78AD1A1021C3992500D03BF3 /* Assets.xcassets in Resources */,
+				78A08AD821D392280092E6A1 /* JTSPopTimeDurationSelecterView.xib in Resources */,
 				7810548C21CA864200BC9B47 /* SettingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -594,6 +619,7 @@
 				78A08A8E21D23A000092E6A1 /* UIView+JTSEvent.m in Sources */,
 				78AD1A1621C3992500D03BF3 /* main.m in Sources */,
 				78AD1A0821C3992300D03BF3 /* AppDelegate.m in Sources */,
+				78A08AD721D392280092E6A1 /* JTSPopTimeDurationSelecterView.m in Sources */,
 				78B4DB3621D0EC3F0079675E /* UINavigationController+JTSStyle.m in Sources */,
 				789CE14721D20F9800D69FC1 /* JTSStatementEditorViewControllerViewModel.m in Sources */,
 				78B4DB3021D0CE240079675E /* UIViewController+JTSRouter.m in Sources */,
