@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="JTSDateSelectorView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="264"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y5j-xr-lPm" userLabel="MenuAreaView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="48"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="hXg-h1-Df7"/>
+                    </constraints>
+                </view>
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="ig1-xB-2wd" userLabel="MainDatePicker">
+                    <rect key="frame" x="0.0" y="48" width="375" height="216"/>
+                    <date key="date" timeIntervalSinceReferenceDate="567584119.78316796">
+                        <!--2018-12-27 06:15:19 +0000-->
+                    </date>
+                </datePicker>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ig1-xB-2wd" firstAttribute="bottom" secondItem="Q5M-cg-NOt" secondAttribute="bottom" id="5i7-ha-aSy"/>
+                <constraint firstItem="y5j-xr-lPm" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="9hP-7c-Oa2"/>
+                <constraint firstItem="ig1-xB-2wd" firstAttribute="top" secondItem="y5j-xr-lPm" secondAttribute="bottom" id="Fb8-IL-hLT"/>
+                <constraint firstItem="y5j-xr-lPm" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="LKI-jb-eys"/>
+                <constraint firstItem="ig1-xB-2wd" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="OfA-7Q-zed"/>
+                <constraint firstItem="ig1-xB-2wd" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="R16-dH-h7B"/>
+                <constraint firstItem="ig1-xB-2wd" firstAttribute="top" secondItem="y5j-xr-lPm" secondAttribute="bottom" id="aZS-gD-4G0"/>
+                <constraint firstItem="y5j-xr-lPm" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="hA3-GU-Uu6"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <connections>
+                <outlet property="mainDateSelector" destination="ig1-xB-2wd" id="Ud6-xn-NDP"/>
+                <outlet property="menuAreaView" destination="y5j-xr-lPm" id="jvW-64-2Dc"/>
+            </connections>
+            <point key="canvasLocation" x="138.40000000000001" y="-60.26986506746627"/>
+        </view>
+    </objects>
+</document>

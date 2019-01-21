@@ -111,7 +111,7 @@
                         <constraint firstItem="XPX-Yi-wSz" firstAttribute="top" secondItem="AOI-rw-3s8" secondAttribute="bottom" id="wKb-tj-O2E"/>
                     </constraints>
                 </scrollView>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="keG-KY-O6Z">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="keG-KY-O6Z" userLabel="ConfirmButtonView">
                     <rect key="frame" x="0.0" y="603" width="375" height="64"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BNq-f3-pCc">

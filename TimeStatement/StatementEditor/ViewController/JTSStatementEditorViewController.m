@@ -11,10 +11,13 @@
 #import "ReactiveObjC.h"
 #import "RACEXTScope.h"
 @interface JTSStatementEditorViewController ()
+
 @property (weak, nonatomic) IBOutlet UIScrollView *mainScrollView;
 @property (weak, nonatomic) IBOutlet UIView *eventTimeView;
-
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *eventTimeViewHeight;
+
+@property (nonatomic, strong, readwrite) JTSDateSelectorView *timeDurationSelectorView;
+
 @end
 
 @implementation JTSStatementEditorViewController
@@ -32,8 +35,10 @@
     [self showNavigationBarWithTitle:@"Editor"];
     [self.navigationController showNavigationBarWithStyle:JTSNavigationBarStyleDoneDismiss];
     self.mainScrollView.alwaysBounceVertical = YES;
-    
-    
+    _timeDurationSelectorView = [JTSDateSelectorView instanceSelectorView];
+    [self.timeDurationSelectorView setTitle:@"title"];
+    [self.timeDurationSelectorView setLeftButtonWithTitle:@"Remove"];
+    [self.timeDurationSelectorView setRightButtonWithTitle:@"Done"];
 }
 
 - (void)_assignEvent
@@ -41,11 +46,12 @@
     @weakify(self);
     [self.eventTimeView.tapGesture.rac_gestureSignal subscribeNext:^(__kindof UIGestureRecognizer * _Nullable x) {
         NSLog(@"Tap");
-        [UIView animateWithDuration:0.2 animations:^{
-            @strongify(self);
-            self.eventTimeViewHeight.constant = self.eventTimeViewHeight.constant == 48 ? 300 : 48;
-            [self.view layoutIfNeeded];
-        }];
+        @strongify(self);
+        if ([self.timeDurationSelectorView isDescendantOfView:self.view]) {
+            [self.timeDurationSelectorView disappearInView:self.view];
+        } else {
+            [self.timeDurationSelectorView appearInView:self.view];
+        }
     }];
 }
 

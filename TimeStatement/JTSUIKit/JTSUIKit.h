@@ -14,6 +14,7 @@
 #import "Masonry.h"
 #import "UINavigationController+JTSStyle.h"
 #import "UIView+JTSEvent.h"
+#import "JTSDateSelectorView.h"
 
 
 #endif /* JTSUIKit_h */

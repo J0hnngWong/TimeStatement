@@ -48,7 +48,6 @@
     self.navigationController.navigationBar.hidden = NO;
     UIBarButtonItem *backBtn = [[UIBarButtonItem alloc] initWithTitle:@"back" style:UIBarButtonItemStylePlain target:self action:@selector(showMsg)];
     self.navigationItem.rightBarButtonItem = backBtn;
-    NSLog(@"%@", self.navigationController);
 }
 
 - (void)jump {
