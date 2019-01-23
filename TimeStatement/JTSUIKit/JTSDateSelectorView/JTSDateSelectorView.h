@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ReactiveObjC.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -17,6 +18,9 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)setTitle:(NSString *)title;
 - (void)setLeftButtonWithTitle:(NSString *)title;
 - (void)setRightButtonWithTitle:(NSString *)title;
+- (void)setLeftButtonWithTitle:(NSString *)title command:(nullable RACCommand *)command;
+- (void)setRightButtonWithTitle:(NSString *)title command:(nullable RACCommand *)command;
+
 
 - (void)appearInView:(UIView *)view;
 - (void)appearInView:(UIView *)view height:(CGFloat)height;

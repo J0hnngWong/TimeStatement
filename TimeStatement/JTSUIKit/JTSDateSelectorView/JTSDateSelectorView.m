@@ -11,6 +11,7 @@
 #import "JTSMacroDefination.h"
 
 @interface JTSDateSelectorView ()
+
 @property (weak, nonatomic) IBOutlet UIView *menuAreaView;
 @property (weak, nonatomic) IBOutlet UIDatePicker *mainDateSelector;
 
@@ -46,9 +47,26 @@
 
 - (void)setLeftButtonWithTitle:(NSString *)title
 {
+    [self setLeftButtonWithTitle:title command:nil];
+}
+
+- (void)setRightButtonWithTitle:(NSString *)title
+{
+    [self setRightButtonWithTitle:title command:nil];
+}
+
+- (void)setLeftButtonWithTitle:(NSString *)title command:(nullable RACCommand *)command
+{
+    if (command == nil) {
+        command = [[RACCommand alloc] initWithSignalBlock:^RACSignal * _Nonnull(id  _Nullable input) {
+            return [RACSignal return:@(YES)];
+        }];
+    }
+    
     UIButton *leftButton = [[UIButton alloc] init];
     [leftButton setTitle:title forState:UIControlStateNormal];
     [leftButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    leftButton.rac_command = command;
     [self.menuAreaView addSubview:leftButton];
     //设定位置约束
     [leftButton mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -57,11 +75,18 @@
     }];
 }
 
-- (void)setRightButtonWithTitle:(NSString *)title
+- (void)setRightButtonWithTitle:(NSString *)title command:(nullable RACCommand *)command
 {
+    if (command == nil) {
+        command = [[RACCommand alloc] initWithSignalBlock:^RACSignal * _Nonnull(id  _Nullable input) {
+            return [RACSignal return:@(YES)];
+        }];
+    }
+    
     UIButton *rightButton = [[UIButton alloc] init];
     [rightButton setTitle:title forState:UIControlStateNormal];
     [rightButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    rightButton.rac_command = command;
     [self.menuAreaView addSubview:rightButton];
     //设定位置约束
     [rightButton mas_makeConstraints:^(MASConstraintMaker *make) {
