@@ -21,6 +21,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)setLeftButtonWithTitle:(NSString *)title command:(nullable RACCommand *)command;
 - (void)setRightButtonWithTitle:(NSString *)title command:(nullable RACCommand *)command;
 
+- (void)setDate:(NSDate *)date;
+- (NSDate *)readDate;
 
 - (void)appearInView:(UIView *)view;
 - (void)appearInView:(UIView *)view height:(CGFloat)height;

@@ -95,7 +95,19 @@
     }];
 }
 
-#pragma mark - action
+#pragma mark - setGet
+
+- (void)setDate:(NSDate *)date
+{
+    [self.mainDateSelector setDate:date];
+}
+
+- (NSDate *)readDate
+{
+    return [self.mainDateSelector date];
+}
+
+#pragma mark - viewAction
 
 - (void)appearInView:(UIView *)view
 {

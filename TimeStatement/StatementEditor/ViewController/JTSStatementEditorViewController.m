@@ -10,11 +10,15 @@
 #import "JTSUIKit.h"
 #import "ReactiveObjC.h"
 #import "RACEXTScope.h"
+
 @interface JTSStatementEditorViewController ()
 
 @property (weak, nonatomic) IBOutlet UIScrollView *mainScrollView;
 @property (weak, nonatomic) IBOutlet UIView *eventTimeView;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *eventTimeViewHeight;
+
+@property (strong, nonatomic) RACCommand *resetDateCommand;
+@property (strong, nonatomic) RACCommand *confirmDateCommand;
 
 @property (nonatomic, strong, readwrite) JTSDateSelectorView *timeDurationSelectorView;
 
@@ -37,8 +41,8 @@
     self.mainScrollView.alwaysBounceVertical = YES;
     _timeDurationSelectorView = [JTSDateSelectorView instanceSelectorView];
     [self.timeDurationSelectorView setTitle:@"title"];
-    [self.timeDurationSelectorView setLeftButtonWithTitle:@"Remove"];
-    [self.timeDurationSelectorView setRightButtonWithTitle:@"Done"];
+    [self.timeDurationSelectorView setLeftButtonWithTitle:@"Reset" command:self.resetDateCommand];
+    [self.timeDurationSelectorView setRightButtonWithTitle:@"Confirm" command:self.confirmDateCommand];
 }
 
 - (void)_assignEvent
@@ -53,6 +57,37 @@
             [self.timeDurationSelectorView appearInView:self.view];
         }
     }];
+    [self.resetDateCommand.executionSignals.switchToLatest.deliverOnMainThread subscribeNext:^(id  _Nullable x) {
+        @strongify(self)
+        [self.timeDurationSelectorView setDate:[NSDate date]];
+    }];
+    [self.confirmDateCommand.executionSignals.switchToLatest.deliverOnMainThread subscribeNext:^(id  _Nullable x) {
+        @strongify(self)
+        NSDate *date = [self.timeDurationSelectorView readDate];
+        NSLog(@"%@", date);
+    }];
+}
+
+#pragma mark - command
+
+- (RACCommand *)resetDateCommand
+{
+    if (_resetDateCommand == nil) {
+        _resetDateCommand = [[RACCommand alloc] initWithSignalBlock:^RACSignal * _Nonnull(id  _Nullable input) {
+            return [RACSignal return:@(YES)];
+        }];
+    }
+    return _resetDateCommand;
+}
+
+- (RACCommand *)confirmDateCommand
+{
+    if (_confirmDateCommand == nil) {
+        _confirmDateCommand = [[RACCommand alloc] initWithSignalBlock:^RACSignal * _Nonnull(id  _Nullable input) {
+            return [RACSignal return:@(YES)];
+        }];
+    }
+    return _confirmDateCommand;
 }
 
 /*
