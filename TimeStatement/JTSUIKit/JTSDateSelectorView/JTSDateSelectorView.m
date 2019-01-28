@@ -31,6 +31,12 @@
     return [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([JTSDateSelectorView class]) owner:nil options:nil] firstObject];
 }
 
+- (void)setStyle:(UIDatePickerMode)datePickerMode
+{
+    [_mainDateSelector setDatePickerMode:datePickerMode];
+    [_mainDateSelector setCountDownDuration:3];
+}
+
 #pragma mark - menuAreaView
 
 - (void)setTitle:(NSString *)title

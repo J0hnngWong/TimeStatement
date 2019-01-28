@@ -15,6 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (instancetype)instanceSelectorView;
 
+- (void)setStyle:(UIDatePickerMode)datePickerMode;
+
 - (void)setTitle:(NSString *)title;
 - (void)setLeftButtonWithTitle:(NSString *)title;
 - (void)setRightButtonWithTitle:(NSString *)title;
