@@ -13,8 +13,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface JTSDateSelectorView : UIView
 
-+ (instancetype)instanceSelectorView;
-
 - (void)setStyle:(UIDatePickerMode)datePickerMode;
 
 - (void)setTitle:(NSString *)title;

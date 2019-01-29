@@ -15,6 +15,7 @@
 #import "UINavigationController+JTSStyle.h"
 #import "UIView+JTSEvent.h"
 #import "JTSDateSelectorView.h"
+#import "JTSDatePickerViewController.h"
 
 
 #endif /* JTSUIKit_h */

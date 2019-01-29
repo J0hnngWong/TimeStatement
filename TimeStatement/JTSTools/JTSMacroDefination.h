@@ -18,6 +18,11 @@ return _##property;  \
 
 #define JTSSafeCallBlock(block) if(block) { block(); }
 
+//animation
+#define ANIMATE_DURATION 0.3
+#define SPRING_DAMPING 2.0f
+#define SPRING_INITIAL 1.0f
+
 //#ifdef DEBUG
 #define JTSLog(fmt, ...) NSLog((@"\n[File:%s]\n" "[Function:%s]\n" "[Line:%d] \n\n" fmt "\n"), __FILE__, __FUNCTION__, __LINE__, ##__VA_ARGS__);
 //#else

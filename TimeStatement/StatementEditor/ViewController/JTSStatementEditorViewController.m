@@ -11,7 +11,7 @@
 #import "ReactiveObjC.h"
 #import "RACEXTScope.h"
 
-@interface JTSStatementEditorViewController ()
+@interface JTSStatementEditorViewController () <JTSDatePickerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIScrollView *mainScrollView;
 @property (weak, nonatomic) IBOutlet UIView *eventTimeView;
@@ -20,7 +20,10 @@
 @property (strong, nonatomic) RACCommand *resetDateCommand;
 @property (strong, nonatomic) RACCommand *confirmDateCommand;
 
+@property (strong, nonatomic) JTSDatePickerViewController *datePickerViewController;
 @property (nonatomic, strong, readwrite) JTSDateSelectorView *timeDurationSelectorView;
+
+@property (strong, nonatomic) JTSStatementEditorViewControllerViewModel *viewModel;
 
 @end
 
@@ -36,10 +39,10 @@
 - (void)_assignSubView
 {
     //[self.navigationController showNavigationBarWithStyle:JTSNavigationBarStylePresentDone];
+    self.datePickerViewController.delegate = self;
     [self showNavigationBarWithTitle:@"Editor"];
     [self.navigationController showNavigationBarWithStyle:JTSNavigationBarStyleDoneDismiss];
     self.mainScrollView.alwaysBounceVertical = YES;
-    _timeDurationSelectorView = [JTSDateSelectorView instanceSelectorView];
     [self.timeDurationSelectorView setTitle:@"title"];
     [self.timeDurationSelectorView setLeftButtonWithTitle:@"Reset" command:self.resetDateCommand];
     [self.timeDurationSelectorView setRightButtonWithTitle:@"Confirm" command:self.confirmDateCommand];
@@ -51,11 +54,8 @@
     [self.eventTimeView.tapGesture.rac_gestureSignal subscribeNext:^(__kindof UIGestureRecognizer * _Nullable x) {
         NSLog(@"Tap");
         @strongify(self);
-        if ([self.timeDurationSelectorView isDescendantOfView:self.view]) {
-            [self.timeDurationSelectorView disappearInView:self.view];
-        } else {
-            [self.timeDurationSelectorView appearInView:self.view];
-        }
+        [self presentViewController:self.datePickerViewController animated:NO completion:nil];
+        
     }];
     [self.resetDateCommand.executionSignals.switchToLatest.deliverOnMainThread subscribeNext:^(id  _Nullable x) {
         @strongify(self)
@@ -66,6 +66,13 @@
         NSDate *date = [self.timeDurationSelectorView readDate];
         NSLog(@"%@", date);
     }];
+}
+
+#pragma mark - delegate
+
+- (void)getSelectedDate:(NSDate *)date
+{
+    NSDateFormatter *dateFomatter = [[NSDateFormatter alloc] init];
 }
 
 #pragma mark - command
@@ -88,6 +95,14 @@
         }];
     }
     return _confirmDateCommand;
+}
+
+- (JTSDatePickerViewController *)datePickerViewController
+{
+    if (_datePickerViewController == nil) {
+        _datePickerViewController = [[JTSDatePickerViewController alloc] init];
+    }
+    return _datePickerViewController;
 }
 
 /*

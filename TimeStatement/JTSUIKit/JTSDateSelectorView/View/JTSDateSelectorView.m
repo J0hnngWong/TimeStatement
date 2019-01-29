@@ -10,10 +10,13 @@
 #import "Masonry.h"
 #import "JTSMacroDefination.h"
 
+#define MENU_AREA_VIEW_HEIGHT 56.0f
+#define MAIN_DATE_SELECTOR_HEIGHT 216.0f
+
 @interface JTSDateSelectorView ()
 
-@property (weak, nonatomic) IBOutlet UIView *menuAreaView;
-@property (weak, nonatomic) IBOutlet UIDatePicker *mainDateSelector;
+@property (strong, nonatomic) UIView *menuAreaView;
+@property (strong, nonatomic) UIDatePicker *mainDateSelector;
 
 @end
 
@@ -21,20 +24,61 @@
 
 #pragma mark - init
 
-- (void)awakeFromNib
+- (instancetype)init
 {
-    [super awakeFromNib];
+    self = [super init];
+    if (self) {
+        [self setupContents];
+    }
+    return self;
 }
 
-+ (instancetype)instanceSelectorView
+- (instancetype)initWithFrame:(CGRect)frame
 {
-    return [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([JTSDateSelectorView class]) owner:nil options:nil] firstObject];
+    self = [super initWithFrame:frame];
+    if (self) {
+        [self setupContentsWithFrame:frame];
+    }
+    return self;
 }
+
+- (void)setupContents
+{
+    [self setupContentsWithFrame:CGRectMake(0, 0, self.superview.frame.size.width, MENU_AREA_VIEW_HEIGHT + MAIN_DATE_SELECTOR_HEIGHT)];
+}
+
+- (void)setupContentsWithFrame:(CGRect)frame
+{
+    self.frame = frame;
+    self.backgroundColor = [UIColor redColor];
+    //设定菜单显示区域
+    self.menuAreaView.frame = CGRectMake(0, 0, self.frame.size.width, MENU_AREA_VIEW_HEIGHT);
+    self.menuAreaView.backgroundColor = [UIColor blueColor];
+//    [self.menuAreaView mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.left.equalTo(self.mas_left).offset(0);
+//        make.right.equalTo(self.mas_right).offset(0);
+//        make.top.equalTo(self.mas_top).offset(0);
+//        make.height.mas_equalTo(MENU_AREA_VIEW_HEIGHT);
+//    }];
+    [self addSubview:self.menuAreaView];
+    //设定日期选择器
+    self.mainDateSelector.frame = CGRectMake(0, MENU_AREA_VIEW_HEIGHT, self.frame.size.width, MAIN_DATE_SELECTOR_HEIGHT);
+    [self.mainDateSelector setDatePickerMode:UIDatePickerModeCountDownTimer];
+//    [self.mainDateSelector mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.left.equalTo(self.mas_left).offset(0);
+//        make.right.equalTo(self.mas_right).offset(0);
+//        make.bottom.equalTo(self.mas_bottom).offset(0);
+//        make.top.equalTo(self.menuAreaView.mas_bottom).offset(0);
+//    }];
+    [self addSubview:self.mainDateSelector];
+}
+
+#pragma mark - setAttributes
 
 - (void)setStyle:(UIDatePickerMode)datePickerMode
 {
-    [_mainDateSelector setDatePickerMode:datePickerMode];
-    [_mainDateSelector setCountDownDuration:3];
+    [self.mainDateSelector setDatePickerMode:datePickerMode];
+    [self.mainDateSelector setCountDownDuration:3];
 }
 
 #pragma mark - menuAreaView
@@ -152,6 +196,22 @@
     } completion:^(BOOL finished) {
         [weakSelf removeFromSuperview];
     }];
+}
+
+- (UIView *)menuAreaView
+{
+    if (_menuAreaView == nil) {
+        _menuAreaView = [[UIView alloc] init];
+    }
+    return _menuAreaView;
+}
+
+- (UIDatePicker *)mainDateSelector
+{
+    if (_mainDateSelector == nil) {
+        _mainDateSelector = [[UIDatePicker alloc] init];
+    }
+    return _mainDateSelector;
 }
 
 /*
