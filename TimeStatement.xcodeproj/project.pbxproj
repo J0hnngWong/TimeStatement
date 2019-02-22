@@ -18,6 +18,7 @@
 		7810548521CA846100BC9B47 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7810548421CA846100BC9B47 /* LaunchScreen.xib */; };
 		7810548B21CA864200BC9B47 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7810548921CA864200BC9B47 /* SettingViewController.m */; };
 		7810548C21CA864200BC9B47 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7810548A21CA864200BC9B47 /* SettingViewController.xib */; };
+		7843E0FD221FA03C00C1F07E /* JTSRootPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7843E0FC221FA03C00C1F07E /* JTSRootPageViewController.m */; };
 		789CE14721D20F9800D69FC1 /* JTSStatementEditorViewControllerViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 789CE14621D20F9800D69FC1 /* JTSStatementEditorViewControllerViewModel.m */; };
 		78A08A8E21D23A000092E6A1 /* UIView+JTSEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A08A8D21D23A000092E6A1 /* UIView+JTSEvent.m */; };
 		78A08AE521D4A4100092E6A1 /* JTSDateSelectorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A08AE321D4A4100092E6A1 /* JTSDateSelectorView.m */; };
@@ -72,6 +73,8 @@
 		7810548821CA864200BC9B47 /* SettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
 		7810548921CA864200BC9B47 /* SettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 		7810548A21CA864200BC9B47 /* SettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
+		7843E0FB221FA03C00C1F07E /* JTSRootPageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JTSRootPageViewController.h; sourceTree = "<group>"; };
+		7843E0FC221FA03C00C1F07E /* JTSRootPageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JTSRootPageViewController.m; sourceTree = "<group>"; };
 		789CE14521D20F9800D69FC1 /* JTSStatementEditorViewControllerViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JTSStatementEditorViewControllerViewModel.h; sourceTree = "<group>"; };
 		789CE14621D20F9800D69FC1 /* JTSStatementEditorViewControllerViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JTSStatementEditorViewControllerViewModel.m; sourceTree = "<group>"; };
 		78A08A8C21D23A000092E6A1 /* UIView+JTSEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+JTSEvent.h"; sourceTree = "<group>"; };
@@ -286,6 +289,8 @@
 				78B4DB2621D0C3600079675E /* StatementEditor */,
 				7810548621CA85FE00BC9B47 /* Main */,
 				7810548721CA862200BC9B47 /* Setting */,
+				7843E0FB221FA03C00C1F07E /* JTSRootPageViewController.h */,
+				7843E0FC221FA03C00C1F07E /* JTSRootPageViewController.m */,
 				7810547521CA7B6E00BC9B47 /* JTSRootNavigationViewController.h */,
 				7810547621CA7B6E00BC9B47 /* JTSRootNavigationViewController.m */,
 				78AD1A0621C3992300D03BF3 /* AppDelegate.h */,
@@ -660,6 +665,7 @@
 				78AD1A1621C3992500D03BF3 /* main.m in Sources */,
 				78AD1A0821C3992300D03BF3 /* AppDelegate.m in Sources */,
 				78A08AE521D4A4100092E6A1 /* JTSDateSelectorView.m in Sources */,
+				7843E0FD221FA03C00C1F07E /* JTSRootPageViewController.m in Sources */,
 				78B4DB3621D0EC3F0079675E /* UINavigationController+JTSStyle.m in Sources */,
 				7803117E22004B21004D70DA /* JTSDatePickerViewControllerViewModel.m in Sources */,
 				789CE14721D20F9800D69FC1 /* JTSStatementEditorViewControllerViewModel.m in Sources */,
